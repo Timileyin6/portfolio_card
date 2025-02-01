@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TIMI'S PROFILE CARD</title>
+	<link rel="stylesheet" type="text/css" href="hng0.css">
+</head>
+<body>
+
+	<section class="main">
+		<div class="profilePic spacing">
+			<img src="timi3.jpg" alt="Profile Picture" data-testid="profilePicture">
+		</div>
+		<h2 class="fullName" data-testid="fullName">Adetimehin Oluwatimilehin</h2>
+		<p class="jobTitle spacing" data-testid="jobTitle">FRONTEND DEVELOPER</p>
+		<p class="shortBio spacing" data-testid="shortBio">I am a passionate front-end developer with a love for crafting beautiful and user-friendly interfaces. Experienced in HTML, CSS, and JavaScript. I am also currently learning React to add to my front-end development skills. I have joined HNG Tech to gain experience and put some of my skills to the test.</p>
+		<p class="currentLocation spacing" data-testid="currentLocation">LAGOS, NIGERIA.</p>
+		<p class="emailAddress spacing" data-testid="emailAddress">timiadetimehin@gmail.com</p>
+		<div class="socialLinks spacing" data-testid="socialLinks">
+		
+			<a href="#" target="_blank">LinkedIn</a>
+			<a href="#" target="_blank">GitHub</a>		
+			<a href="#" target="_blank">Twitter</a>
+		
+	</div>
+	<p id="utcTime" data-testid="currentTimeUTC"></p>
+	</section> 
+
+	<script type="text/javascript">
+		function updateTime() {
+            const utcTimeElement = document.getElementById("utcTime");
+            const now = new Date();
+            utcTimeElement.textContent = "Current UTC Time: " + now.toUTCString();
+        }
+        updateTime();
+		
+	</script>
+</body>
+</html>
